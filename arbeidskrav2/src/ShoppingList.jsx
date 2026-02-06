@@ -1,4 +1,6 @@
-import ShoppingItem from "./ShoppingItem";
+import ShoppingItem from "./ShoppingItem"; // Importer ShoppingItem-komponenten for å vise hver vare i handlelisten
+
+// Komponent for å vise handlelisten
 
 export default function ShoppingList({ items, onToggleBought, onUpdateQuantity }) {
   return (
