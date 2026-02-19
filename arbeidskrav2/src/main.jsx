@@ -4,11 +4,6 @@
 // er ikke den chaten jeg brukte for oppgaven jeg jeg brukte ble borte men jeg spørte 
 // det samme spørsmålet i en annen chat og velig lik svar vis ikke helt likt svar
 
-// Join 'React Handleliste-App Krav og Implementering'
-// You're invited to join Galned Engvold in a group chat with Copilot.
-// Copilot uses AI and can make mistakes. None of your personal 
-// memory with Copilot will be shared in the group.
-
 //ble en del siden ikke helt satt foten in på import og alt slik og deling av koder på 
 //forskelige sider må bli bedre på dette og øve på det
 
