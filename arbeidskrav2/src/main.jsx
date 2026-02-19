@@ -1,5 +1,5 @@
 // link til ai chaten som er brukt for arbeidskravet
-// https://copilot.microsoft.com/conversations/join/kKmEZ8gFMq4NmDsAEyPF7
+// https://copilot.microsoft.com/chats/J93Z4edXhD9LFkh2VH3Q6
 // ser ut som du må joine chatten for å se infon det står...
 
 // Join 'React Handleliste-App Krav og Implementering'
