@@ -1,5 +1,5 @@
 // link til ai chaten som er brukt for arbeidskravet
-// https://copilot.microsoft.com/chats/J93Z4edXhD9LFkh2VH3Q6
+// https://copilot.microsoft.com/conversations/join/wbftKRX7nNqCKvJYp9gLE
 // ser ut som du må joine chatten for å se infon det står...
 // er ikke den chaten jeg brukte for oppgaven jeg jeg brukte ble borte men jeg spørte 
 // det samme spørsmålet i en annen chat og velig lik svar vis ikke helt likt svar
