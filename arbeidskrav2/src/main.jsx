@@ -1,6 +1,5 @@
 // Lenke til AI-chaten som er brukt for arbeidskravet
 // https://copilot.microsoft.com/shares/MiE9aGEYrcZyD1cYeSL88
-
 // Gjorde dette fort igjen med AI siden jeg gjorde det første gang med AI og må fokusere
 // på arbeidskrav 3 med API siden den er vanskelig. Tar nok denne oppgaven igjen i påskeferien
 // for å lære den ordentlig uten AI
