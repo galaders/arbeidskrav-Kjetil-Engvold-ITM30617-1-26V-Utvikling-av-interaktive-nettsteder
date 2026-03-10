@@ -1,18 +1,23 @@
+/* CSS-variabler og globale stiler for hele applikasjonen */
 :root {
+  /* Skrifttype for hele appen */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  /* Fargeskjema som støtter både lyst og mørkt tema */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  /* Optimalisering for skriftgjengivelse */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Stiler for lenker */
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,6 +27,7 @@ a:hover {
   color: #535bf2;
 }
 
+/* Stiler for body-elementet */
 body {
   margin: 0;
   display: flex;
@@ -30,11 +36,13 @@ body {
   min-height: 100vh;
 }
 
+/* Stiler for h1-overskrifter */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* Stiler for knapper */
 button {
   border-radius: 8px;
   border: 1px solid transparent;

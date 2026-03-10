@@ -1,20 +1,24 @@
-// link til ai chaten som er brukt for arbeidskravet
+// Lenke til AI-chaten som er brukt for arbeidskravet
 // https://copilot.microsoft.com/shares/MiE9aGEYrcZyD1cYeSL88
 
-// gjorde dette fort igjen med ai siden jeg gjorde det føreste gang med ai og må fokusere  
-// på arbeidskrav 3 med api siden den er vasnkelig tar nok denne oppgave igjen i påskeferien
-// for å lære den onkeling uten ai
+// Gjorde dette fort igjen med AI siden jeg gjorde det første gang med AI og må fokusere
+// på arbeidskrav 3 med API siden den er vanskelig. Tar nok denne oppgaven igjen i påskeferien
+// for å lære den ordentlig uten AI
 
+// Importerer StrictMode fra React for å hjelpe med å finne potensielle problemer i utvikling
+import { StrictMode } from 'react';
+// Importerer createRoot fra react-dom/client for å rendre React-appen
+import { createRoot } from 'react-dom/client';
+// Importerer global CSS-styling
+import './index.css';
+// Importerer hovedkomponenten App
+import App from './App.jsx';
 
-
-
-import { StrictMode } from 'react' // Importer StrictMode fra React
-import { createRoot } from 'react-dom/client' // Importer createRoot fra react-dom/client
-import './index.css' // Importer CSS for styling
-import App from './App.jsx' // Importer hovedkomponenten App
-
+// Finner HTML-elementet med id 'root' og renderer React-appen der
 createRoot(document.getElementById('root')).render(
+  // StrictMode hjelper med å identifisere sideeffekter og deprecated API-er
   <StrictMode>
+    {/* Renderer hovedkomponenten App */}
     <App />
   </StrictMode>,
-)
+);
