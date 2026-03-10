@@ -1,24 +1,20 @@
-// ShoppingItem.jsx - Komponent for å vise en enkelt vare i handlelisten
-export default function ShoppingItem({ item, onToggleBought, onUpdateQuantity }) {
+export default function ShoppingItem({ item, onTogglePurchased, onUpdateQuantity }) {
   return (
     <li>
-      <article>
-        <label>
-          <input
-            type="checkbox" // Checkbox for å markere om varen er kjøpt eller ikke
-            checked={item.bought} // Sjekk om varen er kjøpt
-            onChange={() => onToggleBought(item.id)} // Kall funksjonen for å toggle kjøpt-status når checkboxen endres
-          />
-          {item.name}
-        </label>
+      <input
+        type="checkbox"
+        checked={item.purchased}
+        onChange={() => onTogglePurchased(item.id)}
+      />
 
-        <input
-          type="number" // Input-felt for å oppdatere antall
-          min="1" // Minimumsverdi for antall
-          value={item.quantity} // Vis nåværende antall
-          onChange={e => onUpdateQuantity(item.id, Number(e.target.value))} // Kall funksjonen for å oppdatere antall når input-feltet endres
-        />
-      </article>
+      <span>{item.name}</span>
+
+      <input
+        type="number"
+        min="1"
+        value={item.quantity}
+        onChange={e => onUpdateQuantity(item.id, Number(e.target.value))}
+      />
     </li>
   );
 }

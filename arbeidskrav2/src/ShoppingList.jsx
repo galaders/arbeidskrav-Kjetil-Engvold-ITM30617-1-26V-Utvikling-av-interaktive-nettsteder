@@ -1,20 +1,16 @@
-import ShoppingItem from "./ShoppingItem"; // Importer ShoppingItem-komponenten for å vise hver vare i handlelisten
+import ShoppingItem from "./ShoppingItem";
 
-// Komponent for å vise handlelisten
-
-export default function ShoppingList({ items, onToggleBought, onUpdateQuantity }) {
+export default function ShoppingList({ items, onTogglePurchased, onUpdateQuantity }) {
   return (
-    <section>
-      <ul>
-        {items.map(item => (
-          <ShoppingItem
-            key={item.id}
-            item={item}
-            onToggleBought={onToggleBought}
-            onUpdateQuantity={onUpdateQuantity}
-          />
-        ))}
-      </ul>
-    </section>
+    <ul>
+      {items.map(item => (
+        <ShoppingItem
+          key={item.id}
+          item={item}
+          onTogglePurchased={onTogglePurchased}
+          onUpdateQuantity={onUpdateQuantity}
+        />
+      ))}
+    </ul>
   );
 }

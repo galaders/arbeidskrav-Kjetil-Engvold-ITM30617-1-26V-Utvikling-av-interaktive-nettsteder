@@ -1,62 +1,57 @@
-import { useState } from "react"; // Importer useState fra React
+import { useState } from "react";
 
-// Komponent for å legge til varer i handlelisten
 export default function AddForm({ onAddItem }) {
-  const [name, setName] = useState(""); // State for varenavn
-  const [quantity, setQuantity] = useState(""); // State for antall
-  const [error, setError] = useState(""); // State for feilmeldinger
+  const [name, setName] = useState("");
+  const [quantity, setQuantity] = useState("");
+  const [error, setError] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault(); // Forhindre at siden oppdateres ved form submission
+    e.preventDefault();
 
     if (!name && !quantity) {
-      setError("Du må fylle ut både varenavn og antall."); // Sjekk om begge feltene er tomme
+      setError("Du må fylle ut både vare og antall.");
       return;
     }
     if (!name) {
-      setError("Du må skrive inn et varenavn."); // Sjekk om varenavn er tomt
+      setError("Du må skrive inn et varenavn.");
       return;
     }
     if (!quantity) {
-      setError("Du må skrive inn et antall."); // Sjekk om antall er tomt
+      setError("Du må skrive inn et antall.");
       return;
     }
 
-    setError(""); // Tøm feilmeldingen hvis alt er gyldig
-    onAddItem(name, quantity); // Kall funksjonen for å legge til varen i handlelisten
-    setName(""); // Tøm input-feltet for varenavn
-    setQuantity(""); // Tøm input-feltet for antall
+    onAddItem(name, quantity);
+    setName("");
+    setQuantity("");
+    setError("");
   }
 
   return (
     <section>
       <form onSubmit={handleSubmit}>
-        <fieldset>
-          <label>
-            Vare:
-            <input
-              type="text" // Input-felt for varenavn
-              placeholder="legg til vare"
-              value={name}
-              onChange={e => setName(e.target.value)} // Oppdater state når brukeren skriver inn varenavn
-            />
-          </label>
+        <label>
+          Vare
+          <input
+            type="text"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+        </label>
 
-          <label>
-            Antall:
-            <input
-              type="number" // Input-felt for antall
-              placeholder="legg til antall"
-              min="1" // Minimumsverdi for antall
-              value={quantity}
-              onChange={e => setQuantity(e.target.value)} // Oppdater state når brukeren skriver inn antall
-            />
-          </label>
+        <label>
+          Antall
+          <input
+            type="number"
+            min="1"
+            value={quantity}
+            onChange={e => setQuantity(e.target.value)}
+          />
+        </label>
 
-          <button type="submit">Legg til</button>
+        <button type="submit">Legg til vare</button>
 
-          {error && <p style={{ color: "red" }}>{error}</p>}
-        </fieldset>
+        {error && <p role="alert">{error}</p>}
       </form>
     </section>
   );

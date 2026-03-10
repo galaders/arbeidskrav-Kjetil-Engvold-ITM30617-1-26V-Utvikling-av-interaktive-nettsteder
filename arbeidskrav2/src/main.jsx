@@ -1,11 +1,9 @@
 // link til ai chaten som er brukt for arbeidskravet
-// https://copilot.microsoft.com/conversations/join/wbftKRX7nNqCKvJYp9gLE
-// ser ut som du må joine chatten for å se infon det står...
-// er ikke den chaten jeg brukte for oppgaven jeg jeg brukte ble borte men jeg spørte 
-// det samme spørsmålet i en annen chat og velig lik svar vis ikke helt likt svar
+// https://copilot.microsoft.com/shares/MiE9aGEYrcZyD1cYeSL88
 
-//ble en del siden ikke helt satt foten in på import og alt slik og deling av koder på 
-//forskelige sider må bli bedre på dette og øve på det
+// gjorde dette fort igjen med ai siden jeg gjorde det føreste gang med ai og må fokusere  
+// på arbeidskrav 3 med api siden den er vasnkelig tar nok denne oppgave igjen i påskeferien
+// for å lære den onkeling uten ai
 
 
 
